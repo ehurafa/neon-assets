@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+  <html class="no-js" lang="pt-br">
+    <head >
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+      <meta name="description" content="" />
+      <meta name="author" content="Rafael Gomes" />	    
+      
+
+      <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="images/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+     
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700,900" rel="stylesheet"> 
+      <link rel="stylesheet" href="css/app.css"> 
+   
+
+      <title>Banco Neon</title>
+    </head>
+<body class="loader"> 
+  
+  <!-- preloader --> 
+  <div class="pre-loader">
+    <span></span>
+    <div class="brand"></div>
+  </div>
+  <!-- /preloader --> 
+
+  <!-- header -->  
+  <header>
+    <div class="inner">
+      <div class="logo">
+        <h1>
+          <a href="#">
+            <img src="images/logo-neon.png" alt="Banco Neon" class="desktop" />
+            <img src="images/logo-neon-mobile.png" alt="Banco Neon" class="mobile" />
+          </a>
+        </h1>        
+      </div>
+
+      <div id="saldo">
+          <p>Saldo</p>
+          <h2><span>R$</span> 1.000.000,00</h2>
+        </div>
+    </div>
+  </header>
+  <!-- /header -->  
+  
+  <!-- main -->  
+  <main id="main">
+    
+    <!-- welcome -->  
+    <section id="welcome">
+      <div class="inner"> 
+          <h3 class="date"></h3>          
+          <h4>
+            Bem-vindo
+          </h4>
+      </div>
+    </section>
+    <!-- /welcome -->  
+
+    <!-- carrossel -->  
+    <section id="carrossel" >
+
+      <div class="inner">
+       
+         <div class="itens">           
+      
+          <div class="item calendar calendar-1">
+            <div>
+              <img src="images/icon-calendar.png" alt="Calendario">
+            </div>
+          </div> 
+
+           <!-- carrossel lista -->  
+           <div class="item lista">
+             <div>
+              <table>
+
+                <tr>
+                  <td class="edit">
+                    <img src="images/icon-edit.png" alt="Editar" />             
+                  </td>
+                  <td class="data">
+                    <p>Sua compra aparece aqui</p>
+                    <h3><span>R$</span> 1.000.000,00</h3>
+                  </td>
+                  <td class="delete" >
+                    <img src="images/icon-delete.png" alt="Deletar"  onclick="remove(this)" />   
+                  </td>
+                </tr>
+ 
+                <tr>
+                  <td class="edit">
+                    <img src="images/icon-edit.png" alt="Editar" />             
+                  </td>
+                  <td class="data">
+                    <p>Receba pagamentos</p>
+                    <h3 class="featured"><span>R$</span> + 2.000.000,00</h3>
+                  </td>
+                  <td class="delete" >
+                    <img src="images/icon-delete.png" alt="Deletar"  onclick="remove(this)" />   
+                  </td>
+                </tr>
+ 
+                <tr>
+                  <td class="edit">
+                    <img src="images/icon-edit.png" alt="Editar" />             
+                  </td>
+                  <td class="data">
+                    <p>Sua compra aparece aqui</p>
+                    <h3><span>R$</span> 1.000.000,00</h3>
+                  </td>
+                  <td class="delete" >
+                    <img src="images/icon-delete.png" alt="Deletar"  onclick="remove(this)" />   
+                  </td>
+                </tr>
+                <tr>
+                  <td class="edit">
+                    <img src="images/icon-edit.png" alt="Editar" />             
+                  </td>
+                  <td class="data">
+                    <p>Sua compra aparece aqui</p>
+                    <h3><span>R$</span> 1.000.000,00</h3>
+                  </td>
+                  <td class="delete" >
+                    <img src="images/icon-delete.png" alt="Deletar"  onclick="remove(this)" />   
+                  </td>
+                </tr>
+                <tr>
+                  <td class="edit">
+                    <img src="images/icon-edit.png" alt="Editar" />             
+                  </td>
+                  <td class="data">
+                    <p>Sua compra aparece aqui</p>
+                    <h3><span>R$</span> 1.000.000,00</h3>
+                  </td>
+                  <td class="delete" >
+                    <img src="images/icon-delete.png" alt="Deletar"  onclick="remove(this)" />   
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="edit">
+                    <img src="images/icon-edit.png" alt="Editar" />             
+                  </td>
+                  <td class="data">
+                    <p>Sua compra aparece aqui</p>
+                    <h3><span>R$</span> 1.000.000,00</h3>
+                  </td>
+                  <td class="delete" >
+                    <img src="images/icon-delete.png" alt="Deletar"  onclick="remove(this)" />   
+                  </td>
+                </tr>
+ 
+              </table>
+             </div>
+
+         
+           </div> 
+           <!-- /carrossel lista -->  
+
+           <div class="item calendar calendar-2">
+            <div>
+              <img src="images/icon-calendar.png" alt="Calendario">
+            </div>
+           </div> 
+           <div class="item calendar calendar-2">
+            <div>
+              <img src="images/icon-calendar.png" alt="Calendario">
+            </div>
+          </div> 
+          
+
+         </div> 
+
+                 
+       </div>
+    </section>
+    <!-- /carrossel -->  
+
+  </main>
+  <!-- /main -->  
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+ 
+  <script src="js/app.js"></script>   
+
+  
+ 
+</body>
+</html>
