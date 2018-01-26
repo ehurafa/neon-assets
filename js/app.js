@@ -1,22 +1,20 @@
 $(document).foundation();
 
 
-window.onload = function(){
-    slideAtivo();    
-};
+window.onload = () => slideAtivo();
 
 //preloader
-setTimeout(function(){ carregado() }, 2500);
-function carregado(){
+setTimeout( () => { carregado() }, 2500);
+let carregado = () => {
     $('.pre-loader').animate({height: '0'}, 1000);
-    $('.pre-loader .brand, .pre-loader  span').fadeOut(function(){
+    $('.pre-loader .brand, .pre-loader  span').fadeOut( () =>{
         $('.logo').animate({'opacity':1}, 1000);
         $('body').removeClass('loader');
     });    
   }
-  
+ 
 // data
-(function(){
+(()=>{
    let data = (new Date()).getFullYear();
    document.querySelector('#welcome .date').innerHTML = data;
 })();
@@ -66,7 +64,7 @@ $('#carrossel .inner .itens').slick({
 
 
 
-let slideAtivo = function(){
+let slideAtivo = () =>{
     if( window.innerWidth > 1024) {
         let item = document.querySelectorAll('#carrossel .inner .itens .item');
         let ativo = document.querySelectorAll('#carrossel .inner .itens .slick-current');  
@@ -79,13 +77,8 @@ let slideAtivo = function(){
     }
 }
 if(window.innerWidth > 1024) {
-    $('#carrossel .inner .itens').on('swipe', function(event, slick, direction){
-        slideAtivo();
-    });
-
-    $('#carrossel .inner .itens').on('afterChange', function(event, slick, currentSlide, nextSlide){
-        slideAtivo();
-    });
+    $('#carrossel .inner .itens').on('swipe', (event, slick, direction) => {slideAtivo() });
+    $('#carrossel .inner .itens').on('afterChange', (event, slick, currentSlide, nextSlide) => { slideAtivo() });
 }
 
 let largura = document.querySelector('body').clientWidth;
@@ -96,19 +89,15 @@ if( window.innerWidth > 1024) {
 }
 
 // botao remover
-(function() {
-    remove = function(item) {
-      var parent = $(item).closest('.item');
-      var tr = $(item).closest('tr');
-      var list = $(parent).find('tr').length;  
+( () => {
+    remove = (item) => {
+      let parent = $(item).closest('.item');
+      let tr = $(item).closest('tr');
+      let list = $(parent).find('tr').length;  
       if(list < 2){    
-          $( parent ).fadeOut(400, function() {
-            $( parent ).remove();  
-          }); 
+          $( parent ).fadeOut(400, () => { $( parent ).remove() }); 
       }
-      tr.fadeOut(400, function() {
-        tr.remove();  
-      });              
+      tr.fadeOut(400, () => { tr.remove() });              
       return false;
     }
   })();
